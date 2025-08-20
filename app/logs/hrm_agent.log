@@ -1,0 +1,106 @@
+ERROR: 2025-08-20 09:23:36 - hrm_agent - HTTP Exception: 404 Not Found
+ERROR: 2025-08-20 09:23:36 - hrm_agent - HTTP Exception: 404 Not Found
+INFO: 2025-08-20 09:40:24 - hrm_agent - User asked: At 7 Pm which will be best place to visit in mumbai
+INFO: 2025-08-20 09:40:53 - hrm_agent - User asked: Which time is best to visit Juhu Beach
+INFO: 2025-08-20 09:41:07 - hrm_agent - User asked: Test
+INFO: 2025-08-20 09:41:50 - hrm_agent - User asked: What will be best time to visit Carter Road or Bandstand
+INFO: 2025-08-20 09:43:12 - hrm_agent - User asked: What will be best time to visit Carter Road or Bandstand
+INFO: 2025-08-20 09:44:08 - hrm_agent - User asked: Test
+INFO: 2025-08-20 09:47:57 - hrm_agent - User asked: What isi best time to visit Juhu Beach
+WARNING: 2025-08-20 09:52:30 - hrm_agent - dateparser not available: No module named 'dateparser'
+INFO: 2025-08-20 09:54:28 - hrm_agent - User query: Best time to visit Marine Drive
+ERROR: 2025-08-20 09:55:10 - hrm_agent - An unexpected error occurred: 71
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\OneDrive\Desktop\Backend\app\main.py", line 436, in chat
+    ans = answer_query(payload.query, top_k=payload.top_k, debug=payload.debug)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\OneDrive\Desktop\Backend\app\main.py", line 334, in answer_query
+    intent, slots, intent_scores = detect_intent(q, titles)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\OneDrive\Desktop\Backend\app\main.py", line 239, in detect_intent
+    intent_scores = {idx_to_intent[i]: s for i, s in scored}
+                     ~~~~~~~~~~~~~^^^
+KeyError: 71
+INFO: 2025-08-20 09:59:58 - hrm_agent - User query: Best time to visit Marine Drive
+ERROR: 2025-08-20 10:00:17 - hrm_agent - An unexpected error occurred: 71
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python312\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\OneDrive\Desktop\Backend\app\main.py", line 433, in chat
+    ans = answer_query(payload.query, top_k=payload.top_k, debug=payload.debug)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\OneDrive\Desktop\Backend\app\main.py", line 331, in answer_query
+    intent, slots, intent_scores = detect_intent(q, titles)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\OneDrive\Desktop\Backend\app\main.py", line 238, in detect_intent
+    intent_scores = {idx_to_intent[idx]: score for idx, score in scored}
+                     ~~~~~~~~~~~~~^^^^^
+KeyError: 71
+INFO: 2025-08-20 10:03:31 - hrm_agent - User query: Best time to visit Marine Drive
+INFO: 2025-08-20 10:03:52 - hrm_agent - User query: Best time to visit Marine Drive
+INFO: 2025-08-20 10:05:09 - hrm_agent - User query: Which places are least crowded right now?
+INFO: 2025-08-20 10:06:17 - hrm_agent - User query: Tell me about moonlight
+INFO: 2025-08-20 10:06:27 - hrm_agent - User query: Test
+INFO: 2025-08-20 10:07:04 - hrm_agent - User query: Where i can go in evening
+INFO: 2025-08-20 10:08:43 - hrm_agent - User query: What will be best time to visit Nehru park
+INFO: 2025-08-20 10:14:38 - hrm_agent - User query: What will be best to to visit Carter Road
+INFO: 2025-08-20 10:16:24 - hrm_agent - User query: Where can I go for a quiet evening walk near Bandra around 7 pm today
+INFO: 2025-08-20 10:21:09 - hrm_agent - User query: Where can I go for a quiet evening walk near Bandra around 7 pm today?”
+INFO: 2025-08-20 10:22:56 - hrm_agent - User query: Where i can see sunset today?”
+INFO: 2025-08-20 10:24:31 - hrm_agent - User query: Where i can go for dinner in bandra
